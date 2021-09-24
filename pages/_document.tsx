@@ -84,6 +84,7 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
+          <meta name="viewport" content="initial-scale=1, width=device-width" />
           <meta name="theme-color" content={theme.palette.primary.main} />
           <meta name="description" content="Hello!" />
         </Head>
