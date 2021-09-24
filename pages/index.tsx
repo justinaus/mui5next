@@ -1,3 +1,4 @@
+import { Box, Button, Container, Typography } from '@mui/material';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
@@ -13,7 +14,17 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>123</main>
+      <main className={styles.main}>
+        <Container maxWidth="sm">
+          {/* The `sx` prop is a shortcut for defining custom style that has access to the theme. */}
+          <Box sx={{ my: 4 }}>
+            <Typography variant="h4" component="h1" gutterBottom>
+              Next.js v5-beta with TypeScript example
+            </Typography>
+            <Button variant="contained">Go to the main page</Button>
+          </Box>
+        </Container>
+      </main>
 
       <footer className={styles.footer}></footer>
     </div>
